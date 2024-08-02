@@ -1,0 +1,49 @@
+.footer {
+  padding: 60px 0 32px 0;
+}
+.footer-bar {
+  &__menu {
+    gap: 48px;
+    a {
+      color: #fff;
+      font-weight: 300;
+      &:hover {
+        color: darken(#fff, 10%);
+      }
+    }
+  }
+  &__icon {
+    gap: 32px;
+    img {
+      max-width: 48px;
+      cursor: pointer;
+      transition: all ease 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+  }
+}
+.footer-contact {
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 32px;
+  border-bottom: 1px solid #fff;
+  span {
+    font-size: 40px;
+    margin-right: 22px;
+  }
+  a:hover {
+    color: darken(#fff, 10%);
+  }
+}
+.footer-declare {
+  padding-top: 32px;
+  font-weight: 300;
+  ul {
+    gap: 48px;
+    a:hover {
+      color: darken(#fff, 10%);
+    }
+  }
+}

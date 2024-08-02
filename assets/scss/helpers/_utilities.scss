@@ -1,0 +1,99 @@
+// font
+.h2 {
+  font-size: 64px;
+}
+.h3 {
+  font-size: 36px;
+}
+.h4 {
+  font-size: 48px;
+}
+.h5 {
+  font-size: 24px;
+}
+.font-weight-b {
+  font-weight: bold;
+}
+.fs-italic {
+  font-style: italic;
+}
+// flex
+.d-flex {
+  display: flex;
+}
+.flex-direction-c {
+  flex-direction: column;
+}
+.flex-wrap-w {
+  flex-wrap: wrap;
+}
+.justify-content-sb {
+  justify-content: space-between;
+}
+.justify-content-c {
+  justify-content: center;
+}
+.align-items-c {
+  align-items: center;
+}
+.align-items-e {
+  align-items: flex-end;
+}
+.align-self-c {
+  align-self: center;
+}
+.card-row {
+  margin: 0 -12px;
+}
+// color
+.bg-primary {
+  background: #aa0601;
+}
+.bg-secondary {
+  background: #fbf2f2;
+}
+.text-primary {
+  color: #650300;
+}
+.text-secondary {
+  color: #aa0601;
+}
+.text-light {
+  color: #fff;
+}
+
+// bg
+.bg-cover {
+  background-size: cover;
+}
+
+// space
+.mt-2 {
+  margin-top: 8px;
+}
+.mb-2 {
+  margin-bottom: 8px;
+}
+.mb-4 {
+  margin-bottom: 16px;
+}
+.mb-6 {
+  margin-bottom: 24px;
+}
+.mb-8 {
+  margin-bottom: 32px;
+}
+.mb-9 {
+  margin-bottom: 36px;
+}
+.mb-12 {
+  margin-bottom: 48px;
+}
+.section-padding {
+  padding: 80px 0;
+}
+
+// text
+.text-c {
+  text-align: center;
+}

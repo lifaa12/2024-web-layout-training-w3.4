@@ -10,9 +10,10 @@
 }
 @mixin h1-img {
   display: block;
-  width: 90px;
-  height: 40px;
-  background-image: url();
+  width: 80px;
+  height: 49px;
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/logo-white.png?raw=true");
+  background-size: cover;
   text-indent: 101%;
   overflow: hidden;
   white-space: nowrap;

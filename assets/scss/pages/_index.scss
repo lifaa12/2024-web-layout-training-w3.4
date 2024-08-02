@@ -1,0 +1,136 @@
+.index-banner-bg {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+}
+.index-banner-text {
+  padding: 296px 0;
+  > h2 {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  > button {
+    color: #fff;
+    border: 0;
+    font-size: $font-base * 1.25;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all ease 0.3s;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+.index-header {
+  &__list {
+    li {
+      display: flex;
+      flex-direction: column;
+    }
+    span {
+      font-size: 83px;
+    }
+  }
+  &__column {
+    width: 25%;
+    padding: 0 12px;
+  }
+}
+.classic-product__column {
+  width: 33.333%;
+  padding: 0 12px;
+}
+.co-branded-product-bg {
+  background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+}
+.co-branded-product__list p {
+  background: #fff;
+  padding: 8px 0;
+}
+.customer-recommend {
+  &__column {
+    width: 25%;
+    padding: 0 12px;
+  }
+  li {
+    box-shadow: 0px 2px 6px #00000029;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+  }
+  &__text {
+    padding: 16px;
+    span {
+      display: block;
+      margin-top: 72px;
+      font-size: $font-base * 0.875;
+      color: #707070;
+    }
+  }
+}
+.index-contact {
+  max-width: 636px;
+  margin: 0 auto;
+  &__text {
+    font-size: $font-base * 1.25;
+  }
+  input {
+    width: 100%;
+    border: 1px solid #000000;
+    padding: 6px 12px;
+    background: transparent;
+  }
+  &__textarea {
+    display: block;
+    background: transparent;
+    border: 1px solid #000000;
+    resize: none;
+    width: 100%;
+    height: 136px;
+    padding: 6px 12px;
+  }
+  .checkbox {
+    padding-left: 24px;
+    position: relative;
+    cursor: pointer;
+    &::before {
+      content: "";
+      position: absolute;
+      border: 1px solid #000;
+      top: 1px;
+      left: 0px;
+      width: 18px;
+      height: 18px;
+    }
+    &::after {
+      content: "";
+      display: none;
+      position: absolute;
+      border-right: 2px solid #000;
+      border-bottom: 2px solid #000;
+      left: 6px;
+      top: 2px;
+      width: 7px;
+      height: 15px;
+      transform: rotate(40deg);
+    }
+  }
+  input[type="checkbox"] {
+    display: none;
+    width: auto;
+    &:checked + .checkbox::after {
+      display: block;
+    }
+  }
+  &__btn {
+    margin: 48px auto 0 auto;
+    max-width: 416px;
+    > input {
+      padding: 16px 0;
+      background: #aa0601;
+      color: #fff;
+      border: 0;
+      cursor: pointer;
+      &:hover {
+        background: #650300;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.nav {
+  padding: 16px 0;
+  &__logo a {
+    @include h1-img;
+  }
+  &__menu {
+    gap: 64px;
+    font-size: $font-base * 1.25;
+    a {
+      color: #fff;
+      font-weight: 300;
+      &:hover {
+        color: darken(#fff, 10%);
+      }
+    }
+  }
+}

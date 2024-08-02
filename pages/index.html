@@ -11,46 +11,64 @@
 <body>
   <%- include("./layout/navbar") %>
     <header>
-      <div class="index-banner-bg">
+      <div class="index-banner-bg bg-cover">
         <div class="container">
-          <p>Promise-Desert 2020 早春系列</p>
-          <h2>看得清，才能看得遠</h2>
-          <button>立即購買</button>
+          <div class="index-banner-text d-flex flex-direction-c align-items-e">
+            <p class="h3">Promise-Desert 2020 早春系列</p>
+            <h2 class="h2 text-primary">看得清，才能看得遠</h2>
+            <button class="bg-primary">立即購買</button>
+          </div>
         </div>
       </div>
-      <div class="index-header-bg">
+      <div class="index-header-bg bg-secondary">
         <div class="container">
-          <div class="index-header">
-            <h3>用專業的心，做專業的事</h3>
-            <ul class="index-header__list">
-              <li>
-                <span class="material-symbols-outlined">
-                  paid
-                </span>
-                <h4>單一價格</h4>
-                <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
-              </li>
-              <li>
-                <span class="material-symbols-outlined">
-                  schedule
-                </span>
-                <h4>20 分鐘即可取件</h4>
-                <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
-              </li>
-              <li>
-                <span class="material-symbols-outlined">
-                  favorite
-                </span>
-                <h4>安心售後服務</h4>
-                <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
-              </li>
-              <li>
-                <span class="material-symbols-outlined">
-                  voicemail
-                </span>
-                <h4>關於鏡片</h4>
-                <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
-              </li>
+          <div class="index-header section-padding">
+            <h4 class="text-c h4 font-weight-b text-primary mb-8">用專業的心，做專業的事</h4>
+            <ul class="index-header__list d-flex card-row flex-warp-w">
+              <div class="index-header__column">
+                <li>
+                  <div class="text-primary align-self-c">
+                    <span class="material-symbols-outlined mb-4">
+                      paid
+                    </span>
+                    <h5 class="font-weight-b mb-2">單一價格</h5>
+                  </div>
+                  <p>無論任何度數皆不需追加費用即可擁有適合自己的薄型球面鏡片。</p>
+                </li>
+              </div>
+              <div class="index-header__column">
+                <li>
+                  <div class="text-primary align-self-c">
+                    <span class="material-symbols-outlined mb-4">
+                      schedule
+                    </span>
+                    <h5 class="font-weight-b mb-2">20 分鐘即可取件</h5>
+                  </div>
+                  <p>為了您的寶貴時間著想，以豐富專業知識與技術將結帳到交件的時間縮減至最快 20 分鐘即可完成。</p>
+                </li>
+              </div>
+              <div class="index-header__column">
+                <li>
+                  <div class="text-primary align-self-c">
+                    <span class="material-symbols-outlined mb-4">
+                      favorite
+                    </span>
+                    <h5 class="font-weight-b mb-2">安心售後服務</h5>
+                  </div>
+                  <p>我們提供長達 120 天的保固售後服務，不限會員資格皆享有免費深層保養及專業維修服務。</p>
+                </li>
+              </div>
+              <div class="index-header__column">
+                <li>
+                  <div class="text-primary align-self-c">
+                    <span class="material-symbols-outlined mb-4">
+                      voicemail
+                    </span>
+                    <h5 class="font-weight-b mb-2">關於鏡片</h5>
+                  </div>
+                  <p>使用世界知名頂級品牌，抗UV、防汙鍍膜薄型非球面鏡片。</p>
+                </li>
+              </div>
             </ul>
           </div>
         </div>
@@ -58,104 +76,136 @@
     </header>
     <main>
       <div class="container">
-        <h3>經典系列鏡框</h3>
-        <ul class="classic-product">
-          <li>
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true"
-              alt="model">
-            <h4>OPTICAL</h4>
-          </li>
-          <li>
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true"
-              alt="model">
-            <h4>SUNGLASSES</h4>
-          </li>
-          <li>
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
-              alt="model">
-            <h4>FUNCTIONAL</h4>
-          </li>
-        </ul>
-      </div>
-      <div class="co-branded-product-bg">
-        <div class="container">
-          <h3>聯名設計鏡框</h3>
-          <ul class="co-branded-product">
-            <li>
-              <img
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
-                alt="glasses">
-              <h4>DOUBLE A+</h4>
-            </li>
-            <li>
-              <img
-                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
-                alt="glasses">
-              <h4>YOUTH</h4>
-            </li>
+        <div class="classic-product section-padding">
+          <h4 class="h4 text-c font-weight-b text-primary mb-6">經典系列鏡框</h4>
+          <ul class="classic-product__list d-flex card-row flex-warp-w">
+            <div class="classic-product__column">
+              <li>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-1.png?raw=true"
+                  alt="model">
+                <p class="text-secondary h4 font-weight-b fs-italic text-c mt-2">OPTICAL</p>
+              </li>
+            </div>
+            <div class="classic-product__column">
+              <li>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-2.png?raw=true"
+                  alt="model">
+                <p class="text-secondary h4 font-weight-b fs-italic text-c mt-2">SUNGLASSES</p>
+              </li>
+            </div>
+            <div class="classic-product__column">
+              <li>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section3-3.png?raw=true"
+                  alt="model">
+                <p class="text-secondary h4 font-weight-b fs-italic text-c mt-2">FUNCTIONAL</p>
+              </li>
+            </div>
           </ul>
+        </div>
+      </div>
+      <div class="co-branded-product-bg bg-cover">
+        <div class="container">
+          <div class="co-branded-product section-padding">
+            <h4 class="h4 mb-12 text-c text-light">聯名設計鏡框</h4>
+            <ul class="co-branded-product__list d-flex">
+              <li>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
+                  alt="glasses">
+                <p class="h4 fs-italic font-weight-b text-secondary text-c">DOUBLE A+</p>
+              </li>
+              <li>
+                <img
+                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
+                  alt="glasses">
+                <p class="h4 fs-italic font-weight-b text-secondary text-c">YOUTH</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </main>
     <section class="container">
-      <div class="customer-recommend">
-        <h4>顧客推薦</h4>
-        <ul class="customer-recommend__list">
-          <li>
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-1.png?raw=true"
-              alt="model">
-            <h4>Jessy</h4>
-            <p>眼鏡品質優良，下次還會想來這邊購買！</p>
-            <span>2021/06/20</span>
-          </li>
-          <li>
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-2.png?raw=true"
-              alt="model">
-            <h4>凱倫</h4>
-            <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
-            <span>2021/04/18</span>
-          </li>
-          <li>
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-3.png?raw=true"
-              alt="model">
-            <h4>悠悠</h4>
-            <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
-            <span>2020/12/25</span>
-          </li>
-          <li>
-            <img
-              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-4.png?raw=true"
-              alt="model">
-            <h4>Kyuan</h4>
-            <p>服務很好，品質沒有任何問題，非常喜歡。</p>
-            <span>2020/10/31</span>
-          </li>
+      <div class="customer-recommend section-padding">
+        <h4 class="h4 font-weight-b text-primary text-c mb-12">顧客推薦</h4>
+        <ul class="customer-recommend__list d-flex card-row flex-warp-w">
+          <div class="customer-recommend__column">
+            <li>
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-1.png?raw=true"
+                alt="model">
+              <div class="customer-recommend__text">
+                <p class="mb-2">Jessy</p>
+                <p>眼鏡品質優良，下次還會想來這邊購買！</p>
+                <span>2021/06/20</span>
+              </div>
+            </li>
+          </div>
+          <div class="customer-recommend__column">
+            <li>
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-2.png?raw=true"
+                alt="model">
+              <div class="customer-recommend__text">
+                <p class="mb-2">凱倫</p>
+                <p>做工細緻、鏡架很輕盈，待久也不會覺得有負擔，推薦給大家！</p>
+                <span>2021/04/18</span>
+              </div>
+            </li>
+          </div>
+          <div class="customer-recommend__column">
+            <li>
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-3.png?raw=true"
+                alt="model">
+              <div class="customer-recommend__text">
+                <p class="mb-2">悠悠</p>
+                <p>謝謝客服人員的詳細回答，成功買到了喜歡的眼鏡，下次會再回購！</p>
+                <span>2020/12/25</span>
+              </div>
+            </li>
+          </div>
+          <div class="customer-recommend__column">
+            <li>
+              <img
+                src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section5-4.png?raw=true"
+                alt="model">
+              <div class="customer-recommend__text">
+                <p class="mb-2">Kyuan</p>
+                <p>服務很好，品質沒有任何問題，非常喜歡。</p>
+                <span>2020/10/31</span>
+              </div>
+            </li>
+          </div>
         </ul>
       </div>
     </section>
-    <div class="index-contact-bg">
+    <div class="index-contact-bg bg-secondary">
       <div class="container">
-        <h4>聯絡我們</h4>
-        <p>我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
-        <form action="index.html" class="index-contact-form">
-          <label for="name">姓名</label>
-          <input type="text" id="name" placeholder="陳小明">
-          <label for="phone">聯絡電話</label>
-          <input type="text" id="phone" placeholder="0912-345-678">
-          <label for="mail">電子郵件</label>
-          <input type="text" id="mail" placeholder="example@email.com">
-          <label for="text">意見反應</label>
-          <input type="text" id="text" placeholder="請輸入您的意見">
-          <input type="checkbox">
-          <p>我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</p>
-          <input type="button" value="確認送出">
-        </form>
+        <div class="index-contact section-padding">
+          <h4 class="h4 text-c font-weight-b text-primary mb-12">聯絡我們</h4>
+          <p class="index-contact__text mb-6">我們相當重視您的意見，若您有任何疑問，可先參考「常見問題」，若仍有任何問題，請填妥以下資料，我們會在近期與您聯繫。</p>
+          <form action="index.html" class="index-contact-form">
+            <label for="name" class="mb-2">姓名</label>
+            <input type="text" id="name" placeholder="陳小明" class="mb-4">
+            <label for="phone" class="mb-2">聯絡電話</label>
+            <input type="text" id="phone" placeholder="0912-345-678" class="mb-4">
+            <label for="mail" class="mb-2">電子郵件</label>
+            <input type="text" id="mail" placeholder="example@email.com" class="mb-4">
+            <label for="text" class="mb-2">意見反應</label>
+            <textarea id="text" placeholder="請輸入您的意見" class="index-contact__textarea mb-4"></textarea>
+            <label class="mb-12">
+              <input type="checkbox">
+              <span class="checkbox">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</span>
+            </label>
+            <div class="index-contact__btn">
+              <input type="button" value="確認送出">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <%- include("./layout/footer") %>
