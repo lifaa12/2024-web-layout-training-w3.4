@@ -32,11 +32,25 @@
   &__column {
     width: 25%;
     padding: 0 12px;
+    @include pad {
+      width: 50%;
+    }
   }
 }
-.classic-product__column {
-  width: 33.333%;
-  padding: 0 12px;
+.classic-product {
+  &__list {
+    @include pad {
+      max-width: 360px;
+      margin: 0 auto;
+    }
+  }
+  &__column {
+    width: 33.333%;
+    padding: 0 12px;
+    @include pad {
+      width: 100%;
+    }
+  }
 }
 .co-branded-product-bg {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
@@ -46,23 +60,32 @@
   padding: 8px 0;
 }
 .customer-recommend {
+  @include pad {
+    padding-bottom: 66px;
+  }
   &__column {
     width: 25%;
     padding: 0 12px;
+    @include pad {
+      width: 50%;
+      margin-bottom: 24px;
+    }
   }
   li {
     box-shadow: 0px 2px 6px #00000029;
     border: 1px solid #dee2e6;
     border-radius: 4px;
+    height: 100%;
   }
   &__text {
-    padding: 16px;
-    span {
-      display: block;
-      margin-top: 72px;
-      font-size: $font-base * 0.875;
-      color: #707070;
-    }
+    padding: 16px 16px 48px 16px;
+  }
+  span {
+    padding: 0 16px 16px 16px;
+    display: block;
+    margin-top: auto;
+    font-size: $font-base * 0.875;
+    color: #707070;
   }
 }
 .index-contact {
