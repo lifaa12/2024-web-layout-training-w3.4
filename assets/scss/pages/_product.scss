@@ -1,0 +1,35 @@
+.product-tab {
+  li {
+    width: 33.333%;
+    border: 1px solid #dcdcdc;
+    font-size: $font-base * 2;
+    padding: 24px 0;
+    cursor: pointer;
+    &:hover {
+      border-bottom: 8px solid #aa0601;
+      transition: all ease 0.4s;
+    }
+  }
+  .active {
+    border-bottom: 8px solid #aa0601;
+  }
+}
+.product {
+  > h3 {
+    font-size: $font-base * 2.265;
+  }
+  > p {
+    font-size: $font-base * 2;
+  }
+  &__card {
+    margin-bottom: 80px;
+    // &:hover > img {
+    //   transform: scale(0.9);
+    //   transition: all ease 0.5s;
+    // }
+  }
+  &__column {
+    width: 25%;
+    padding: 0 12px;
+  }
+}

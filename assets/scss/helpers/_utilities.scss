@@ -70,7 +70,19 @@
 .text-light {
   color: #fff;
 }
-
+.color-select-first {
+  width: 24px;
+  height: 24px;
+  background: #5f3e2d;
+  border-radius: 4px;
+  margin-right: 8px;
+}
+.color-select-second {
+  width: 24px;
+  height: 24px;
+  background: #b75929;
+  border-radius: 4px;
+}
 // bg
 .bg-cover {
   background-size: cover;
