@@ -1,9 +1,21 @@
 .footer {
-  padding: 60px 0 32px 0;
+  padding-top: 60px;
+  @include mobile-xs {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    border-bottom: 1px solid #fff;
+  }
 }
 .footer-bar {
   &__menu {
     gap: 48px;
+    @include mobile {
+      gap: 36px;
+    }
+    @include mobile-xs {
+      display: none;
+    }
     a {
       color: #fff;
       font-weight: 300;
@@ -14,10 +26,22 @@
   }
   &__icon {
     gap: 32px;
+    @include mobile {
+      gap: 16px;
+    }
+    @include mobile-xs {
+      gap: 8px;
+    }
     img {
       max-width: 48px;
       cursor: pointer;
       transition: all ease 0.3s;
+      @include mobile {
+        max-width: 40px;
+      }
+      @include mobile-xs {
+        max-width: 24px;
+      }
       &:hover {
         transform: scale(1.1);
       }
@@ -33,17 +57,35 @@
     font-size: 40px;
     margin-right: 22px;
   }
+  @include mobile-xs {
+    border: 0;
+    span {
+      font-size: 18px;
+      margin-right: 11px;
+    }
+  }
   a:hover {
     color: darken(#fff, 10%);
   }
 }
 .footer-declare {
-  padding-top: 32px;
+  padding: 32px 0;
   font-weight: 300;
   ul {
     gap: 48px;
     a:hover {
       color: darken(#fff, 10%);
+    }
+  }
+  @include mobile-xs {
+    flex-direction: column;
+    padding: 16px 0 24px 0;
+    > p {
+      margin-bottom: 8px;
+    }
+    > ul {
+      flex-direction: column;
+      gap: 8px;
     }
   }
 }

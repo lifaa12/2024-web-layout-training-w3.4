@@ -1,8 +1,14 @@
 .index-banner-bg {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header.png?raw=true");
+  @include mobile {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-header-sm.png?raw=true");
+  }
 }
 .index-banner-text {
   padding: 296px 0;
+  @include mobile-xs {
+    padding: 144px 0;
+  }
   > h2 {
     margin-bottom: 10px;
     font-weight: bold;
@@ -35,15 +41,12 @@
     @include pad {
       width: 50%;
     }
+    @include mobile-xs {
+      width: 100%;
+    }
   }
 }
 .classic-product {
-  &__list {
-    @include pad {
-      max-width: 360px;
-      margin: 0 auto;
-    }
-  }
   &__column {
     width: 33.333%;
     padding: 0 12px;
@@ -51,17 +54,69 @@
       width: 100%;
     }
   }
+  @include pad {
+    padding: 80px 0 56px 0;
+    &__list {
+      max-width: 360px;
+      margin: 0 auto;
+    }
+    p {
+      margin-bottom: 24px;
+    }
+  }
+  @include mobile-xs {
+    padding: 40px 0 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__list {
+      max-width: 372px;
+      margin: 0 -12px;
+    }
+    p {
+      font-size: 48px;
+    }
+  }
 }
 .co-branded-product-bg {
   background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg.png?raw=true");
+  @include mobile {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-md.png?raw=true");
+  }
+  @include mobile-xs {
+    background-image: url("https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/index-bg-sm.png?raw=true");
+  }
 }
-.co-branded-product__list p {
-  background: #fff;
-  padding: 8px 0;
+.co-branded-product {
+  &__list {
+    @include mobile {
+      flex-direction: column;
+      gap: 24px;
+    }
+    p {
+      background: #fff;
+      padding: 8px 0;
+    }
+  }
+  @include mobile-xs {
+    padding: 40px 0;
+    .mb-12 {
+      margin-bottom: 24px;
+    }
+    p {
+      font-size: 48px;
+    }
+  }
 }
 .customer-recommend {
   @include pad {
     padding-bottom: 66px;
+  }
+  @include mobile-xs {
+    padding: 40px 0;
+    .mb-12 {
+      margin-bottom: 24px;
+    }
   }
   &__column {
     width: 25%;
@@ -69,6 +124,9 @@
     @include pad {
       width: 50%;
       margin-bottom: 24px;
+    }
+    @include mobile-xs {
+      width: 100%;
     }
   }
   li {
@@ -91,8 +149,20 @@
 .index-contact {
   max-width: 636px;
   margin: 0 auto;
+  @include mobile {
+    max-width: 576px;
+  }
+  @include mobile-xs {
+    padding: 40px 0;
+    .mb-12 {
+      margin-bottom: 24px;
+    }
+  }
   &__text {
     font-size: $font-base * 1.25;
+    @include mobile {
+      font-size: $font-base;
+    }
   }
   input {
     width: 100%;
@@ -145,6 +215,9 @@
   &__btn {
     margin: 48px auto 0 auto;
     max-width: 416px;
+    @include mobile {
+      max-width: 336px;
+    }
     > button {
       width: 100%;
       padding: 16px 0;

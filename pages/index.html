@@ -27,7 +27,7 @@
             <ul class="index-header__list d-flex card-row flex-wrap-w">
               <div class="index-header__column">
                 <li>
-                  <div class="text-primary align-self-c">
+                  <div class="text-primary d-flex align-self-c flex-direction-c align-items-c">
                     <span class="material-symbols-outlined mb-4">
                       paid
                     </span>
@@ -38,7 +38,7 @@
               </div>
               <div class="index-header__column">
                 <li>
-                  <div class="text-primary align-self-c">
+                  <div class="text-primary d-flex align-self-c flex-direction-c align-items-c">
                     <span class="material-symbols-outlined mb-4">
                       schedule
                     </span>
@@ -49,7 +49,7 @@
               </div>
               <div class="index-header__column">
                 <li>
-                  <div class="text-primary align-self-c">
+                  <div class="text-primary d-flex align-self-c flex-direction-c align-items-c">
                     <span class="material-symbols-outlined mb-4">
                       favorite
                     </span>
@@ -60,7 +60,7 @@
               </div>
               <div class="index-header__column">
                 <li>
-                  <div class="text-primary align-self-c">
+                  <div class="text-primary d-flex align-self-c flex-direction-c align-items-c">
                     <span class="material-symbols-outlined mb-4">
                       voicemail
                     </span>
@@ -112,15 +112,25 @@
             <h3 class="h3 mb-12 text-c text-light">聯名設計鏡框</h3>
             <ul class="co-branded-product__list d-flex">
               <li>
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
-                  alt="glasses">
+                <picture>
+                  <source
+                    srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1-sm.png?raw=true"
+                    media="(max-width: 992px)">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-1.png?raw=true"
+                    alt="glasses">
+                </picture>
                 <p class="h3 fs-italic font-weight-b text-secondary text-c">DOUBLE A+</p>
               </li>
               <li>
-                <img
-                  src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
-                  alt="glasses">
+                <picture>
+                  <source
+                    srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2-sm.png?raw=true"
+                    media="(max-width: 992px)">
+                  <img
+                    src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/home-section4-2.png?raw=true"
+                    alt="glasses">
+                </picture>
                 <p class="h3 fs-italic font-weight-b text-secondary text-c">YOUTH</p>
               </li>
             </ul>
@@ -197,12 +207,8 @@
             <input type="email" id="mail" placeholder="example@email.com" class="mb-4">
             <label for="text" class="mb-2">意見反應</label>
             <textarea id="text" placeholder="請輸入您的意見" class="index-contact__textarea mb-4"></textarea>
-
             <input type="checkbox" id="checkbox">
             <label for="checkbox" class="mb-12 checkbox">我同意隱私權政策，並同意依隱私權政策中所述的方式處理自己的資料。</label>
-
-
-
             <div class="index-contact__btn">
               <button type="submit">確認送出</button>
             </div>

@@ -23,4 +23,7 @@ a {
   @include pad {
     padding: 0 36px;
   }
+  @include mobile-xs {
+    padding: 0 14px;
+  }
 }

@@ -1,12 +1,21 @@
 // font
 .h2 {
   font-size: 64px;
+  @include mobile-xs {
+    font-size: 24px;
+  }
 }
 .h3 {
   font-size: 48px;
+  @include mobile-xs {
+    font-size: 24px;
+  }
 }
 .h4 {
   font-size: 36px;
+  @include mobile-xs {
+    font-size: 16px;
+  }
 }
 .h5 {
   font-size: 24px;
