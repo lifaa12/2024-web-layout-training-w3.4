@@ -11,27 +11,47 @@
 <body>
   <%- include("./layout/navbar") %>
     <header>
-      <div class="container">
+      <div class="product-tab-container">
         <ul class="product-tab d-flex text-c">
-          <li class="active">OPTICAL</li>
-          <li>SUNGLASSES</li>
-          <li>FUNCTIONAL</li>
+          <li class="active font-weight-b">
+            <a href="./product-optical.html">OPTICAL</a>
+          </li>
+          <li class="font-weight-b">
+            <a href="./product-sunglasses.html">SUNGLASSES</a>
+          </li>
+          <li class="font-weight-b">
+            <a href="#">FUNCTIONAL</a>
+          </li>
         </ul>
       </div>
       <ul class="product-bg d-flex">
-        <li><img
-            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true"
-            alt="glasses"></li>
-        <li><img
-            src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true"
-            alt="glasses"></li>
+        <li>
+          <picture>
+            <source
+              srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-1.png?raw=true"
+              media="(max-width: 768px)">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-1.png?raw=true"
+              alt="glasses">
+          </picture>
+        </li>
+        <li>
+          <picture>
+            <source
+              srcset="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-sm-2.png?raw=true"
+              media="(max-width: 768px)">
+            <img
+              src="https://github.com/hexschool/2022-web-layout-training/blob/main/week3-4/product-header-2.png?raw=true"
+              alt="glasses">
+          </picture>
+        </li>
       </ul>
     </header>
     <div class="container">
       <main>
         <div class="product">
-          <h3 class="text-c">Celluloid Combi</h3>
-          <p class="text-c">賽璐珞鈦金屬混合鏡框</p>
+          <h3 class="text-c font-weight-b">Celluloid Combi</h3>
+          <p class="text-c mb-8">賽璐珞鈦金屬混合鏡框</p>
           <div class="product__list card-row d-flex flex-wrap-w">
             <div class="product__column">
               <div class="product__card">
@@ -216,14 +236,14 @@
           </div>
         </div>
       </main>
-      <ul class="pagination">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
+      <ul class="pagination d-flex justify-content-c">
+        <li><a href="#" class="back-next-padding">上一頁</a></li>
+        <li><a href="#" class="page-padding">1</a></li>
+        <li class="active"><a href="#" class="page-padding">2</a></li>
+        <li><a href="#" class="page-padding">3</a></li>
+        <li><a href="#" class="page-padding">4</a></li>
+        <li><a href="#" class="page-padding">5</a></li>
+        <li><a href="#" class="back-next-padding">下一頁</a></li>
       </ul>
     </div>
 

@@ -1,10 +1,31 @@
+.product-tab-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 12px;
+  @include pad {
+    padding: 0 36px;
+  }
+  @include mobile {
+    padding: 0;
+  }
+}
 .product-tab {
   li {
     width: 33.333%;
     border: 1px solid #dcdcdc;
-    font-size: $font-base * 2;
-    padding: 24px 0;
-    cursor: pointer;
+    a {
+      font-size: $font-base * 2;
+      display: block;
+      padding: 24px 0;
+      @include mobile {
+        padding: 16px 49px;
+        font-size: $font-base * 1.5;
+      }
+      @include mobile-xs {
+        padding: 16px 13px;
+        font-size: $font-base;
+      }
+    }
     &:hover {
       border-bottom: 8px solid #aa0601;
       transition: all ease 0.4s;
@@ -15,21 +36,88 @@
   }
 }
 .product {
+  padding-top: 80px;
+  @include mobile-xs {
+    padding-top: 40px;
+    .mb-8 {
+      margin-bottom: 24px;
+    }
+  }
   > h3 {
-    font-size: $font-base * 2.265;
+    font-size: $font-base * 2.625;
   }
   > p {
     font-size: $font-base * 2;
   }
   &__card {
     margin-bottom: 80px;
-    // &:hover > img {
-    //   transform: scale(0.9);
-    //   transition: all ease 0.5s;
-    // }
+    cursor: pointer;
+    &:hover > img {
+      transform: scale(1.1);
+      border-radius: 10px;
+      transition: all ease 0.5s;
+      @include mobile-xs {
+        transform: none;
+        border-radius: 0;
+      }
+    }
+    @include mobile-xs {
+      margin-bottom: 24px;
+    }
   }
   &__column {
     width: 25%;
     padding: 0 12px;
+    @include pad {
+      width: 33.333%;
+    }
+    @include mobile {
+      width: 50%;
+    }
+    @include mobile-xs {
+      width: 100%;
+    }
+  }
+  &__column-sunglasses {
+    width: 33.333%;
+    padding: 0 12px;
+    @include mobile {
+      width: 50%;
+    }
+    @include mobile-xs {
+      width: 100%;
+    }
+  }
+}
+.pagination {
+  margin-bottom: 80px;
+  @include mobile-xs {
+    margin: 40px 0 64px 0;
+  }
+  li {
+    border: 1px solid #555555;
+  }
+  a {
+    font-size: $font-base * 1.125;
+    display: block;
+    @include mobile-xs {
+      font-size: $font-base;
+    }
+  }
+  .active,
+  li:hover {
+    background: #000;
+    a {
+      color: #fff;
+    }
+  }
+  .back-next-padding {
+    padding: 11px 12px;
+  }
+  .page-padding {
+    padding: 12px 16px;
+    @include mobile-xs {
+      padding: 12px 12px;
+    }
   }
 }
