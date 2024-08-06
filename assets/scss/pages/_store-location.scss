@@ -1,10 +1,10 @@
 .store-location {
-  padding: 96px 0 32px 0;
+  padding: 96px 0 80px 0;
   @include pad {
-    padding: 80px 0 56px 0;
+    padding: 80px 0;
   }
   @include mobile {
-    padding: 40px 0;
+    padding: 40px 0 64px 0;
   }
   > h3 {
     padding-left: 16px;
@@ -34,26 +34,40 @@
       }
     }
   }
-  &__column {
-    width: 41.6667%;
-    padding: 0 12px;
+  &__list {
+    gap: 24px;
     @include pad {
-      width: 50%;
-    }
-    @include mobile {
-      width: 100%;
+      display: block;
     }
   }
   &__card {
-    margin-bottom: 48px;
+    width: 40.58%;
     @include pad {
+      width: 100%;
+      gap: 24px;
+      display: flex;
       margin-bottom: 24px;
+      > img {
+        width: 50%;
+      }
+      .store-location__card-text {
+        width: 50%;
+      }
     }
-    > h5 {
+    @include mobile {
+      display: block;
+      > img {
+        width: 100%;
+      }
+      .store-location__card-text {
+        width: 100%;
+      }
+    }
+    h5 {
       padding: 8px 24px 8px 24px;
       border: 1px solid #00000020;
     }
-    > ul {
+    ul {
       padding: 16px 24px 8px 24px;
       border: 1px solid #00000020;
       font-size: $font-base * 1.25;
@@ -64,16 +78,14 @@
         margin-right: 11px;
       }
     }
-    button {
+  }
+  &__map {
+    width: 57.56%;
+    @include pad {
       width: 100%;
-      padding: 16px 0;
-      font-size: 19px;
-      background: #000;
-      color: #fff;
-      cursor: pointer;
-      &:hover {
-        background: lighten(#000, 15%);
-      }
+    }
+    > img {
+      height: 100%;
     }
   }
 }

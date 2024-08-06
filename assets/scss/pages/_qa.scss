@@ -1,0 +1,22 @@
+.qa {
+  padding: 96px 0 80px 0;
+  @include pad {
+    padding: 80px 0;
+  }
+  @include mobile {
+    padding: 40px 0 64px 0;
+    .mb-8 {
+      margin-bottom: 24px;
+    }
+  }
+  > h3 {
+    padding-left: 16px;
+    border-left: 8px solid #9f1213;
+    margin-bottom: 33px;
+  }
+  &__main {
+    h5 {
+      font-size: $font-base * 1.25;
+    }
+  }
+}
