@@ -22,12 +22,15 @@
   }
 }
 .blog {
-  padding: 96px 0 80px 0;
+  padding: 96px 0 64px 0;
   @include pad {
-    padding: 80px 0;
+    padding: 80px 0 56px 0;
+    .mb-8 {
+      margin-bottom: 40px;
+    }
   }
   @include mobile {
-    padding: 40px 0 64px 0;
+    padding: 40px 0 40px 0;
     .mb-8 {
       margin-bottom: 24px;
     }
@@ -35,5 +38,128 @@
   > h3 {
     padding-left: 16px;
     border-left: 8px solid #9f1213;
+  }
+}
+.blog-card {
+  gap: 24px;
+  height: 100%;
+  margin-bottom: 60px;
+  > img {
+    width: calc(50% - 12px);
+    object-fit: cover;
+  }
+  &__text {
+    width: calc(50% - 12px);
+    > h5 {
+      font-size: $font-base * 2;
+    }
+  }
+  &__detail {
+    margin-bottom: 19px;
+    .blog-title {
+      font-size: $font-base * 1.25;
+    }
+  }
+  &__main,
+  &__padhide {
+    font-size: $font-base * 1.25;
+    margin-bottom: 102px;
+    color: #555555;
+  }
+  &__padshow,
+  .blog-card__padlink {
+    color: #555555;
+    display: none;
+    a:hover {
+      color: darken(#555555, 20%);
+    }
+  }
+  &__weblink {
+    margin-top: auto;
+    align-self: flex-end;
+    &:hover {
+      color: darken(#650300, 10%);
+    }
+  }
+  @include pad {
+    img {
+      object-fit: contain;
+    }
+    h5 {
+      font-size: $font-base * 1.5;
+    }
+    &__detail {
+      margin-bottom: 4px;
+      .blog-title {
+        font-size: $font-base;
+      }
+    }
+    &__main {
+      font-size: $font-base;
+      margin-bottom: 0;
+    }
+    &__padhide {
+      display: none;
+    }
+    &__padshow,
+    .blog-card__padlink {
+      display: inline;
+    }
+    &__weblink {
+      display: none;
+    }
+  }
+  @include mobile {
+    img {
+      object-fit: cover;
+    }
+  }
+  @include mobile-xs {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    margin-bottom: 24px;
+    img {
+      margin-bottom: 8px;
+      width: 100%;
+    }
+    &__text {
+      width: 100%;
+    }
+    &__main {
+      display: none;
+    }
+  }
+}
+.pagination {
+  margin-bottom: 80px;
+  @include mobile-xs {
+    margin: 40px 0 64px 0;
+  }
+  li {
+    border: 1px solid #555555;
+  }
+  a {
+    font-size: $font-base * 1.125;
+    display: block;
+    @include mobile-xs {
+      font-size: $font-base;
+    }
+  }
+  .active,
+  li:hover {
+    background: #000;
+    a {
+      color: #fff;
+    }
+  }
+  .back-next-padding {
+    padding: 11px 12px;
+  }
+  .page-padding {
+    padding: 12px 16px;
+    @include mobile-xs {
+      padding: 12px 12px;
+    }
   }
 }
