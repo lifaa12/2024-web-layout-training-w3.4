@@ -2,10 +2,14 @@
   background: #650300;
 }
 .blog-nav {
+  @include mobile-xs {
+    display: none;
+  }
   &__menu {
-    padding: 13px 0;
     gap: 48px;
     li > a {
+      display: block;
+      padding: 13px 0;
       color: #fff;
       &:hover {
         color: darken(#fff, 10%);

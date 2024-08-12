@@ -1,0 +1,146 @@
+.blogpage-nav {
+  @include mobile-xs {
+    justify-content: center;
+  }
+  &__menu {
+    gap: 48px;
+    @include mobile-xs {
+      gap: 24px;
+    }
+    li > a {
+      padding: 13px 0;
+      color: #fff;
+      display: block;
+      &:hover {
+        color: darken(#fff, 10%);
+      }
+    }
+  }
+  span {
+    color: #fff;
+    font-size: 30px;
+    cursor: pointer;
+    &:hover {
+      color: darken(#fff, 10%);
+    }
+    @include mobile-xs {
+      display: none;
+    }
+  }
+}
+.blogpage {
+  padding: 24px 0 80px 0;
+  @include mobile-xs {
+    padding: 16px 0 48px 0;
+  }
+  &__breadcrumb {
+    a:hover {
+      color: lighten(#000, 20%);
+    }
+    .active {
+      color: #aa0601;
+      &:hover {
+        color: #aa0601;
+      }
+    }
+  }
+  &__header-tag {
+    font-size: $font-base * 1.5;
+    gap: 15px;
+    a:hover {
+      color: darken(#aa0601, 10%);
+    }
+    @include mobile-xs {
+      font-size: $font-base;
+    }
+  }
+  h5 {
+    margin-bottom: 16px;
+  }
+  &__content {
+    max-width: 856px;
+    @include pad {
+      max-width: 516px;
+    }
+    @include mobile-xs {
+      width: 100%;
+      margin: 0 auto;
+    }
+    > p {
+      color: #555555;
+    }
+    @include mobile-xs {
+      .h5 {
+        font-size: $font-base;
+      }
+      .mb-10 {
+        margin-bottom: 16px;
+      }
+    }
+  }
+  &__sharelink {
+    gap: 16px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #707070;
+    > a {
+      width: 24px;
+      transition: all ease 0.3s;
+      &:hover {
+        transform: scale(1.1);
+      }
+    }
+    @include mobile-xs {
+      display: none;
+    }
+  }
+  &__tags {
+    margin-left: 24px;
+    max-width: 280px;
+    @include pad {
+      max-width: 140px;
+    }
+    @include mobile-xs {
+      display: none;
+    }
+  }
+  &__tags-title {
+    gap: 12px;
+    > span {
+      font-size: 38px;
+    }
+    > p {
+      font-size: $font-base * 2;
+    }
+    @include pad {
+      > span {
+        font-size: 19px;
+      }
+      > p {
+        font-size: $font-base;
+      }
+    }
+  }
+  &__tagcloud {
+    li {
+      margin-right: 24px;
+      font-size: $font-base * 1.5;
+      a:hover {
+        color: darken(#aa0601, 10%);
+      }
+      @include pad {
+        font-size: $font-base;
+        margin-right: 16px;
+      }
+    }
+  }
+  &__footer-pre,
+  &__footer-next {
+    gap: 12px;
+    &:hover {
+      color: lighten(#000, 30%);
+    }
+    @include mobile-xs {
+      display: none;
+    }
+  }
+}
