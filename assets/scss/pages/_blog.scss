@@ -56,6 +56,9 @@
     width: calc(50% - 12px);
     > h5 {
       font-size: $font-base * 2;
+      a:hover {
+        color: darken(#650300, 10%);
+      }
     }
   }
   &__detail {
